@@ -1,5 +1,13 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/u8785582/public_html/cp
-    - /bin/cp -R public $DEPLOYPATH
+    - export DEPLOYPATH=/home/u8785582/public_html/
+    - /bin/cp -R public/assets $DEPLOYPATH
+    - /bin/cp -R public/css $DEPLOYPATH
+    - /bin/cp -R public/images $DEPLOYPATH
+    - /bin/cp -R public/js $DEPLOYPATH
+    - /bin/cp -R public/mazer $DEPLOYPATH
+    - /bin/cp public/.htaccess $DEPLOYPATH
+    - /bin/cp public/favicon.ico $DEPLOYPATH
+    - /bin/cp public/index.php $DEPLOYPATH
+    - /bin/cp public/robots.txt $DEPLOYPATH
